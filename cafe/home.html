@@ -1,0 +1,478 @@
+<?php
+session_start()
+
+   $_SESSION;
+
+?>
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee House</title>
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- Font Awesome CDN Link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Custom CSS File Link  -->
+    <link rel="stylesheet" href="home.css">
+    
+    
+
+</head>
+
+<body>
+    <a href="logout.php">Logout</a>
+    <!-- HEADER -->
+    <header class="header">
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <a href="#" class="logo">coffee House <i class="fas fa-mug-hot"></a></i>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#menu">menu</a>
+            <a href="#review">review</a>
+            <a href="#book">book</a>
+            <a href="login.html" class="btn">LOGOUT</a>
+            <button class="add-to-cart-button">
+                <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+               
+            </button>
+
+        </nav>
+
+
+        
+    </header>
+
+    <!-- HOME -->
+    <section class="home" id="home">
+        <div class="row">
+            <div class="content">
+                <h3>RELAX WITH COFFEE HOUSE</h3><br>
+                <h2>"Having changed your heart and brain with a cup of coffee,
+                    you're ready to face the challenges of life".
+                </h2><br>
+                <a href="#menu" class="btn">buy one now</a>
+            </div>
+
+            <div class="image">
+                <img src="image/home-img-1.png" class="main-home-image" alt="">
+            </div>
+        </div>
+
+        <div class="image-slider">
+            <img src="image/home-img-1.png" alt="">
+            <img src="image/home-img-2.png" alt="">
+            <img src="image/home-img-3.png" alt="">
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <!-- ABOUT -->
+<section class="about" id="about">
+    <h1 class="heading">about us <span>why choose us</span></h1>
+
+    <div class="row">
+        <div class="image">
+            <img src="image/coffee.jpg" alt="">
+        </div>
+
+        <div class="content">
+            <h3 class="title">What's make our coffee special!</h3>
+            <p>At our coffee shop, what sets us apart is our commitment to 
+                quality and craftsmanship in every cup. We source the finest coffee beans from sustainable farms, ensuring
+                freshness and robust flavors in every brew. Our baristas are passionate about their craft, meticulously crafting each drink to perfection. 
+                Whether you prefer a rich espresso, a velvety latte, or a refreshing cold brew, every sip at our coffee shop promises a delightful experience that lingers with you long after the last drop. 
+            </p>
+            <a href="#" class="btn" id="read-more-btn">read more</a>
+            <div id="extra-content" style="display: none;">
+                <p>Our commitment to quality extends beyond the cup. We believe in sustainable practices and supporting the communities where our coffee is grown. That's why we partner with farmers who prioritize environmental stewardship and fair trade. Join us in making a difference, one cup at a time.We carefully select coffee beans from the world's most renowned coffee-growing regions. Each bean is sourced from sustainable farms that prioritize environmental stewardship and fair trade practices. This ensures that every cup you enjoy is not only rich in flavor but also supports ethical and sustainable agriculture.Our beans are roasted with precision in small batches to bring out their unique flavors and aromas. This meticulous roasting process enhances the natural characteristics of each bean, allowing us to deliver a consistently high-quality coffee experience.We believe in making a positive impact beyond the coffee cup. By supporting local communities and participating in environmental initiatives, we strive to create a meaningful connection with our customers and the world.</p>
+            </div>
+            <div class="icons-container">
+                <div class="icons">
+                    <img src="image/about-icon-1.png" alt="">
+                    <h3>quality coffee</h3>
+                </div>
+                <div class="icons">
+                    <img src="image/about-icon-2.png" alt="">
+                    <h3>our branches</h3>
+                </div>
+                <div class="icons">
+                    <img src="image/about-icon-3.png" alt="">
+                    <h3>free delivery</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- MENU -->
+    <section class="menu" id="menu">
+        <h1 class="heading">our menu <span>popular menu</span></h1>
+
+        <div class="box-container">
+            <a href="#" class="box">
+                <img src="image/menu-1.png" alt="">
+                <div class="content">
+                    <h3>Espresso & Coffee</h3>
+                    <p>A concentrated coffee brewed by forcing a small amount of nearly boiling water through finely-ground coffee beans. 
+                        It has a strong flavor and a rich, creamy layer on top called crema.</p>
+                    <span>₹95</span>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <img src="image/menu-2.png" alt="">
+                <div class="content">
+                    <h3>Cappuccino</h3>
+                    <p>Cappuccinos are known for their frothy texture and often have a dusting of cocoa powder or cinnamon on top.</p>
+                    <span>₹90</span>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <img src="image/menu-3.png" alt="">
+                <div class="content">
+                    <h3>Cold Brew </h3>
+                    <p> Coffee that is brewed with cold water over a longer period, typically 12-24 hours. It results in a smooth, 
+                        less acidic coffee that is served cold or over ice.</p>
+                    <span>₹99</span>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <img src="image/menu-4.png" alt="">
+                <div class="content">
+                    <h3>Mocha</h3>
+                    <p>A coffee drink that combines espresso, steamed milk, and chocolate syrup or cocoa powder. 
+                        It has a sweet, chocolatey flavor and is often topped with whipped cream.</p>
+                    <span>₹100</span>
+
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <img src="image/menu-5.png" alt="">
+                <div class="content">
+                    <h3>Americano</h3>
+                    <p>A coffee drink prepared by diluting espresso with hot water, giving it a similar strength to, 
+                        but different flavor from, regular drip coffee.</p>
+                    <span>₹99</span>
+
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <img src="image/menu-6.png" alt="">
+                <div class="content">
+                    <h3>Macchiato</h3>
+                    <p>An espresso with a small amount of steamed milk added. It can be served either as a "caffe macchiato" (espresso marked with a little milk) or
+                       a "latte macchiato" (milk "stained" with espresso).</p>
+                    <span>₹91</span>
+                </div>
+            </a>
+        
+
+           <a href="#" class="box">
+
+            <img src="image/bean1.jpg" alt="">
+            <div class="content">
+                <h3>Arabica(seeds)</h3>
+                <p>Flavor: Known for its smooth, complex flavor and aromatic properties.
+                    Caffeine Content: Lower than Robusta.
+                    Growing Conditions: Prefers higher altitudes (600-2,200 meters), cooler climates.
+                    Origin: Ethiopia.
+                    Varieties: Includes Typica, Bourbon, SL28, SL34, Gesha, and more.</p>
+                <span>₹95</span>
+            </div>
+        </a>
+            <a href="#" class="box">
+                <img src="image/bean2.jpg" alt="">
+                <div class="content">
+                    <h3> Robusta (Coffea canephora)</h3>
+                    <p>Flavor: Stronger, harsher taste with a grainy or nutty flavor and a higher bitterness.
+                        Caffeine Content: Higher than Arabica.
+                        Growing Conditions: Tolerates lower altitudes (sea level to 800 meters) and warmer climates.
+                        Origin: Central and Western Africa.
+                        Varieties: Includes Conilon, and several hybrids like Nescafe's Nescafé Plan varieties.</p>
+                    <span>₹95</span>
+                </div>
+            </a>
+            
+                <a href="#" class="box">
+                    <img src="image/bean3.jpg" alt="">
+                    <div class="content">
+                        <h3>Liberica (Coffea liberica)</h3>
+                        <p>Flavor: Unique, bold, smoky flavor with a fruity and floral aroma.
+                            Caffeine Content: Lower than Robusta but higher than Arabica.
+                            Growing Conditions: Grows in low altitudes and humid environments.
+                            Origin: Liberia, West Africa.</p>
+                        <span>₹95</span>
+                    </div>
+                </a>
+                
+                    <a href="#" class="box">
+                        <img src="image/bean4.jpg" alt="">
+                        <div class="content">
+                            <h3>Excelsa (Coffea excelsa)</h3>
+                            <p>Flavor: Tart, fruity, and complex, often used in blends to add depth.
+                                Caffeine Content: Similar to Liberica.
+                                Growing Conditions: Grows in similar conditions as Liberica, often in Southeast Asia.
+                                Origin: Reclassified as a variety of Liberica but often distinguished for its unique taste.</p>
+                            <span>₹95</span>
+                        </div>
+                    </a>
+                    <a href="#" class="box">
+                        <img src="image/biscotti.jpg" alt="">
+                        <div class="content">
+                            <h3>Biscotti(snack)</h3>
+                            <p> A classic Italian snack, biscotti are twice-baked cookies that are perfect for dunking in coffee. 
+                                They come in various flavors like almond, chocolate, and cranberry.</p>
+                            <span>₹99</span>
+        
+                        </div>
+                    </a>
+                    <a href="#" class="box">
+                        <img src="image/chocalate.jpg" alt="">
+                        <div class="content">
+                            <h3>Chocolate-Covered Espresso Beans</h3>
+                            <p>These provide a crunchy, sweet, and caffeinated treat, 
+                                combining the richness of chocolate with the bold flavor of espresso. </p>
+                            <span>₹99</span>
+        
+                        </div>
+                    </a>
+                    <a href="#" class="box">
+                        <img src="image/muffins.jpg" alt="">
+                        <div class="content">
+                            <h3>Muffins</h3>
+                            <p>Blueberry, chocolate chip, or banana nut muffins are a great complement to coffee, offering a balance of sweetness and texture. </p>
+                            <span>₹99</span>
+        
+                        </div>
+                    </a>
+                    <a href="#" class="box">
+                        <img src="image/shortbread.jpg" alt="">
+                        <div class="content">
+                            <h3>Shortbread Cookies:</h3>
+                            <p> Buttery and crumbly, these cookies are a simple yet delicious treat that goes well with a hot cup of coffee. </p>
+                            <span>₹99</span>
+        
+                        </div>
+                    </a>
+
+
+
+    </section>
+    
+<!-- BOOK -->
+    <section class="book" id="book">
+    <h1 class="heading">booking <span>reserve a table</span></h1>
+
+    <form action="reserve.php" method="POST">
+        <input type="text" name="name" placeholder="Name" class="box" required>
+        <input type="email" name="email" placeholder="Email" class="box" required>
+        <input type="text" name="phone" placeholder="Number" class="box" required>
+        <textarea name="message" placeholder="Message" class="box" id="" cols="30" rows="10"></textarea>
+        <input type="submit" value="send message" class="btn">
+    </form>
+</section>
+ 
+
+    </section>
+
+    <!-- REVIEW -->
+    <section class="book" id="book">
+    <h1 class="heading">REVIEW <span>RATE US</span></h1>
+    <form action="Rating.php" method="POST">
+    <input type="text" name="name" placeholder="Name" class="box" required>
+    <label>Rating:</label><br><br>
+    <label><input type="radio" name="option" value="1">Very Poor</label><br><br>
+    <label><input type="radio" name="option" value="2">Poor</label><br><br>
+    <label><input type="radio" name="option" value="3">Average</label><br><br>
+    <label><input type="radio" name="option" value="4">Very Good</label><br><br>
+    <label><input type="radio" name="option" value="5">Excellent</label><br><br>
+    <textarea name="message" placeholder="Message" class="box" id="" cols="30" rows="10"></textarea>
+    <input type="submit" value="send message" class="btn">
+</form>
+
+</section>
+ 
+    </section>
+  <!--to show Reviews-->
+    <section class="review" id="review">
+        <h1 class="heading">reviews <span>what people says</span></h1>
+
+        <div class="swiper review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-left"></i>
+                    <i class="fas fa-quote-right"></i>
+                    <img src="image/pic-5.png.jpg" alt="">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>CoffeeHouse.com offers an impressive variety of coffee beans sourced from around the world. 
+                    They have detailed descriptions for each product, including the origin, tasting notes, and roast level, 
+                    which made it easy for me to choose the right coffee for my taste. I particularly loved their "Coffee of the Month" section,
+                    which introduces new and exciting blends.<p>
+                    <h3>Karthik Sharma</h3>
+                    <span>satisfied client</span>
+                </div>
+
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-left"></i>
+                    <i class="fas fa-quote-right"></i>
+                    <img src="image/pic-9.png.jpg">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>I had a few questions about some products, so I reached out to their customer service team. 
+                    They were quick to respond and very helpful, providing detailed answers and even some brewing tips.</p>
+                    <h3>Praveen naachu</h3>
+                    <span>satisfied client</span>
+                </div>
+
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-left"></i>
+                    <i class="fas fa-quote-right"></i>
+                    <img src="image/pic-7.png.jpg" alt="">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>One standout feature of CoffeeHouse.com is their subscription service. 
+                    I signed up for a monthly coffee subscription, and it's been a game-changer. 
+                    I get a new bag of coffee delivered to my door each month, curated based on my preferences</p>
+                    <h3>Sollu Sanjeev</h3>
+                    <span>satisfied client</span>
+                </div>
+
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-left"></i>
+                    <i class="fas fa-quote-right"></i>
+                    <img src="image/pic-4.png" alt="">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>I recently stumbled upon CoffeeHeaven.com while searching for a new coffee supplier, and I have to say, I'm impressed! 
+                    The website is beautifully designed with a clean and intuitive layout that makes browsing through their extensive coffee selection a breeze</p>
+                    <h3>Bhuvan Puli</h3>
+                    <span>satisfied client</span>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    
+
+    
+
+
+    <!-- FOOTER -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>our branches</h3>
+                <a href="#"><i class="fas fa-arrow-right"></i> india</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> USA</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> france</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> africa</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> japan</a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home"><i class="fas fa-arrow-right"></i> home</a>
+                <a href="#about"><i class="fas fa-arrow-right"></i> about</a>
+                <a href="#menu"><i class="fas fa-arrow-right"></i> menu</a>
+                <a href="#review"><i class="fas fa-arrow-right"></i> review</a>
+                <a href="#book"><i class="fas fa-arrow-right"></i> book</a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"><i class="fas fa-phone"></i> 7337224601</a>
+                <a href="#"><i class="fas fa-phone"></i> 9059133885</a>
+                <a href="#"><i class="fas fa-phone"></i> 8008848141</a>
+                <a href="#"><i class="fas fa-envelope"></i> gg9278@srmist.edu.in</a>
+                <a href="#"><i class="fas fa-envelope"></i> ds2072@srmist.edu.in</a>
+                <a href="#"><i class="fas fa-envelope"></i> sp6375@srmist.edu.in</a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i> facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i> twitter</a>
+                <a href="#"><i class="fab fa-instagram"></i> instagram</a>
+                
+            </div>
+        </div>
+
+        <div class="credit">created by <span>Coffe house team</span> | All rights reserved</div>
+    </section>
+    <!-- SWIPER -->
+    
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper('.review-slider', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      loop: true,
+    });
+  </script>
+
+
+    <!-- Custom JS File Link  -->
+    <script src="script.js"></script>
+    <script>
+document.getElementById("read-more-btn").addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent the default anchor behavior
+
+    var extraContent = document.getElementById("extra-content");
+    if (extraContent.style.display === "none") {
+        extraContent.style.display = "block";
+        this.textContent = "read less"; // Change button text
+    } else {
+        extraContent.style.display = "none";
+        this.textContent = "read more"; // Change button text back
+    }
+});
+</script>
+
+
+</body>
+
+</html>

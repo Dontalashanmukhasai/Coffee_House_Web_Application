@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website With Login Page HTML CSS | Codehak</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><ion-icon name="cafe"></ion-icon>Coffee House</a>
+        
+    </header>
+  
+    <section class="home">
+        <div class="content">
+            <h2>RELAX WITH COFFEE HOUSE</h2>
+            <p>"Having charged your heart and brain with a cup of coffee, you're ready to face the challenges of life"</p>
+            <a href="#">Get Started</a>
+        </div>
+        <div class="wrapper-login">
+            <h2>Account Login</h2>
+            <form action="login.php" method="POST">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" name="email" required>        
+                    <label>Enter your email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" name="password" required>        
+                    <label>Enter your password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox"> Remember me</label>
+                    <a href="Forgot.html">Forgot password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="register-link">
+                    <p>No Account? <a href="registration.html">Sign up now</a></p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

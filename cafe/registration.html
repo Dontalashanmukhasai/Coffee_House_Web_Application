@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website With Registration Page HTML CSS | Codehak</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Style for popup */
+        .popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><ion-icon name="cafe"></ion-icon>Coffee House</a>
+        
+    </header>
+  
+    <section class="home">
+        <div class="content">
+            <h2>RELAX WITH COFFEE HOUSE</h2>
+            <p>"Having charged your heart and brain with a cup of coffee, you're ready to face the challenges of life"</p>
+            <a href="#">Get Started</a>
+        </div>
+    
+        <div class="wrapper-signup">
+            <h2>Create Account</h2>
+            <form action="signup.php" method="POST">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" name="name" required>
+                    <label>Enter your name</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" name="email" required>
+                    <label>Enter your email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" name="password" required>
+                    <label>Create a password</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" name="conform password" required>
+                    <label>Conform your password</label>
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+                <div class="login-link">
+                    <p>Have an Account? <a href="login.html">Login</a></p>
+                </div>
+            </form>
+        </div>
+
+        <!-- Popup for success message -->
+        <div class="popup" id="successPopup">
+            <p>Data inserted successfully!</p>
+        </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+    <script>
+        // Show popup function
+        function showPopup() {
+            document.getElementById('successPopup').style.display = 'block';
+            setTimeout(function() {
+                document.getElementById('successPopup').style.display = 'none';
+            }, 3000); // Adjust the timeout as needed (in milliseconds)
+        }
+    </script>
+</body>
+</html>
